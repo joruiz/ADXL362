@@ -46,7 +46,7 @@ void setup(){
 
     // Startup, soft reset
     Serial.begin(9600);
-    xl.begin();                //soft reset
+    xl.begin(10);                //soft reset
     delay(1000);    
     
 	

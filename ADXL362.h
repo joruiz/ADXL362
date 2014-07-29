@@ -56,13 +56,14 @@ public:
 	
 	void checkAllControlRegs();
 	
-private:
-	
 	//  Low-level SPI control, to simplify overall coding
 	byte SPIreadOneRegister(byte regAddress);
 	void SPIwriteOneRegister(byte regAddress, byte regValue);
 	int  SPIreadTwoRegisters(byte regAddress);
 	void SPIwriteTwoRegisters(byte regAddress, int twoRegValue);
+
+private:
+
 };
 
 #endif
